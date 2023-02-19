@@ -6,10 +6,12 @@
 - requirements.txt should be installed in python 
 - Tesserract must be present in the system "https://github.com/UB-Mannheim/tesseract/wiki"
 
-### How to run? 
+### What is this
+AutoExcel is a excel filler tool that
+extracts information from images using latest AI techniques and
+writes them into a excel papersheet.
+> **_NOTE:_**  It's going to support websites as well and can be used as a crawling tool
 
-- Create an excel table. 
-- Write appropriate names for columns. For example email for email adress or tel for telephone number.
-- Put the source files in source folder.
-- Start the program
-- Relax
+### How to run? 
+Currently program can be ran by awaiting main() function in auto_excel module. 
+Note: user should set its own OPENAI api key in main file. 

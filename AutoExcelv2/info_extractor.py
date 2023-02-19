@@ -3,7 +3,7 @@ import openai
 
 async def get_values_async(text, keywords):
     
-    prompt = f"""Extract {', '.join(keywords)} from following in ["{'", "'.join(keywords)}"] (python list) format. Fill with X if not exists.\nInput: {text}\nOutput: """
+    prompt = f"""Extract {', '.join(keywords)} from following in ["{'", "'.join(keywords)}"] (python list) format. Fill with X if not exists.\nInput: {text}\nOutput:"""
     response = await openai.Completion.acreate(
         model="text-davinci-003",
         prompt=prompt,
