@@ -10,14 +10,14 @@ async def main():
     for i in range(ew.sheet_number()):
         keywords = ew.get_keywords(i)
         result = await asyncio.gather(*[get_row_async(path, keywords) for path in text_extractor.get_image_paths()])
+        print(result)
         ew.write(result, i)
     input('Press any key to exit...')
 
 
 async def get_row_async(path, keywords):  # returns a list of values
     text = await text_extractor.extract_text_async(path)
-    # print(text, end='\n--------------------\n')
+    print('Text extracted from image: ', path)
     values = await ie.get_values_async(text, keywords)
-    # print('\n------< VALUES >------\n')
-    # print("values: ", values, end='\n-------<ENDL>-------\n')
+    print('Values extracted from text: ', values)
     return values
