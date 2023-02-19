@@ -8,7 +8,7 @@
 
 ### What is this
 AutoExcel is a excel filler tool that
-extracts information from images using latest AI techniques and
+extracts information from images using latest AI techology and
 writes them into a excel papersheet.
 > **_NOTE:_**  It's going to support websites as well and can be used as a crawling tool
 
